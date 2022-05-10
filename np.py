@@ -1,10 +1,15 @@
 '''
 pip3 install kubernetes prettytable
+
 https://github.com/kubernetes-client/python/blob/master/kubernetes/docs/V1NetworkPolicy.md
 https://github.com/kubernetes-client/python/blob/master/kubernetes/docs/V1NetworkPolicySpec.md
 https://github.com/ahmetb/kubernetes-network-policy-recipes
+
 curl -v -XGET  -H "Accept: application/json;as=Table;v=v1;g=meta.k8s.io,application/json;as=Table;v=v1beta1;g=meta.k8s.io,application/json" -H "User-Agent: kubectl/v1.23.5 (linux/amd64) kubernetes/c285e78" 'https://192.168.49.2:8443/apis/networking.k8s.io/v1/namespaces/default/networkpolicies?limit=500'
+
 curl -v -XGET  -H "Accept: application/json" -H "User-Agent: kubectl/v1.23.5 (linux/amd64) kubernetes/c285e78" 'https://192.168.49.2:8443/apis/networking.k8s.io/v1/namespaces/default/networkpolicies/api-allow'
+
+
 '''
 
 from prettytable import PrettyTable
