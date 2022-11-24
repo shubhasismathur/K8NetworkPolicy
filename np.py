@@ -36,7 +36,7 @@ def decode_netpol(name, spec):
     src_subnet = ""
     port = ""
     
-    #print(spec)
+    ##print(spec)
     if spec.ingress:
         ingress_found = 0 
         target_pod = format_dict(spec.pod_selector.match_labels)    
